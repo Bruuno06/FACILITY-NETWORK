@@ -5,39 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>website</title>
+    <title>Facility Network</title>
 </head>
 <body>
-    <header> 
+    <header>
         <nav class="navigation">
-            <a href="#" class="logo"><span>Facility Network </span> </a>
+            <a href="#" class="logo"><span>Facility Network</span></a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Sobre</a></li><li class="nav-item"><a href="#">Menu</a></li>
+                <li class="nav-item"><a href="#">Sobre</a></li>
+                <li class="nav-item"><a href="#">Menu</a></li>
                 <li class="nav-item"><a href="#">Contato</a></li>
-
-                <i class='bx bx-search'></i>
+                <li class="nav-item search-icon"><i class='bx bx-search'></i></li>
             </ul>
-            <div class="menu">
+            <div class="menu" onclick="toggleMenu()">
                 <span class="bar"></span>
-                <span class="bar"></span> 
+                <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            </nav>
+        </nav>
     </header>
     <main>
         <section class="home">
             <div class="home-text">
-<h4 class="text-h4"> Bem vindo a Facility Network </h4>`
-<h1 class="text-h1"> O que você procura, só encontra aqui. </h1>
-<p> Nós somos uma empresa criada com o intuito de facilitar a relação entre cliente e SAC de empresas, nosso proposito inicial foi criado com o intuito de diminuir o estresse de clientes para tirar duvidas, falar sobre a parte juridica, ou mesmo devoluções.
-</p>
-<a href="#" class="home-btn"> Contrate-nos </a>
+                <h4 class="text-h4">Bem-vindo à Facility Network</h4>
+                <h1 class="text-h1">O que você procura, só encontra aqui.</h1>
+                <p>Nós somos uma empresa criada com o intuito de facilitar a relação entre cliente e SAC de empresas. Nosso propósito inicial foi criado com o intuito de diminuir o estresse de clientes para tirar dúvidas, falar sobre a parte jurídica ou mesmo devoluções.</p>
+                <a href="#" class="home-btn">Contrate-nos</a>
             </div>
             <div class="home-img">
-<img src="" alt="">
+                <img src="logo.png" alt="Imagem empresa">
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-content">
+            <h4>Sobre nós</h4>
+            <p>Nós somos uma empresa criada com o intuito de facilitar a relação entre cliente e SAC de empresas, nosso propósito inicial foi criado com o intuito de diminuir o stress de clientes para tirar dúvidas, falar sobre a parte jurídica, ou mesmo devoluções.</p>
+            <p>Criada em Abril de 2024 por Gabriel Rosa, Alvaro Almeida, Guilherme da Silva, Bruno Cavalcante, Fabio dos Santos e Higor Santos.</p>
+
+            <h4>Nossa missão</h4>
+            <p>Facilitar e intermediar a relação entre clientes e empresas em casos que necessitem de auxílio pós compra.</p>
+
+            <h4>Visão</h4>
+            <p>Tornar mais fácil a parte do SAC, evitando estresse com telemarketing e outros intermediadores, por meio do digital.</p>
+
+            <h4>Valores</h4>
+            <p>Inovação, qualidade, simplicidade, agilidade e precisão.</p>
+
+            <h4>Áreas de atuação</h4>
+            <p>Suporte técnico</p>
+
+            <h4>Descrição da Equipe</h4>
+            <ul>
+                <li>Alvaro - Back End e Banco de dados</li>
+                <li>Gabriel - Coordenador e Jurídico</li>
+                <li>Higor - QA</li>
+                <li>Guilherme - Front End e Design</li>
+                <li>Bruno - Front End e Marketing</li>
+                <li>Fabio - Tech Lead</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
