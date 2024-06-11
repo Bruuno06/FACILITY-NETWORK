@@ -31,7 +31,8 @@
                 <h4 class="text-h4">Bem-vindo à Facility Network</h4>
                 <h1 class="text-h1">O que você procura, só encontra aqui.</h1>
                 <p>Nós somos uma empresa criada com o intuito de facilitar a relação entre cliente e SAC de empresas. Nosso propósito inicial foi criado com o intuito de diminuir o estresse de clientes para tirar dúvidas, falar sobre a parte jurídica ou mesmo devoluções.</p>
-                <a href="#" class="home-btn">Contrate-nos</a>
+                <a href="#" class ="home-btn" onclick="pgcontat()">Contrate-nos</a>
+               
             </div>
             <div class="home-img">
                 <img src="logo.png" alt="Imagem empresa">
@@ -71,6 +72,12 @@
         function toggleMenu() {
             const navMenu = document.querySelector('.nav-menu');
             navMenu.classList.toggle('active');
+
+        function pgcontat(){
+                window.location.href = "contato.html";
+            }
+            
+
         }
     </script>
 </body>
