@@ -6,3 +6,4 @@ function toggleMenu() {
 function pgcontat() {
     window.location.href = "contato.html";
 }
+
